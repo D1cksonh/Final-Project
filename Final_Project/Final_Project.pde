@@ -1,5 +1,4 @@
-int total = 0;
-Bubble[] bubbles = new  Bubble[100]; //change the 100 to change the # of bubbles
+Bubble[] bubbles = new  Bubble[999]; //change the 100 to change the # of bubbles
 
 import processing.sound.*;
 SoundFile song;
@@ -12,24 +11,25 @@ void setup() {
  analyzer = new Amplitude(this);
  analyzer.input(song);
  
- for (int i = 0; i < 100; i++){ // change the 100 to change # of bubbles
+ for (int i = 0; i < 999; i++){ // change the 100 to change # of bubbles
    bubbles[i] = new Bubble(); 
  }
 }
 
 void draw() {
  background(0);
+ 
+ //Circle objects
  smallCircle();
  bigCircle();
  cubeCounter();
  
+ //Changing aspects of the song
+ songSetup();
+ songBugs();
+ 
+ //Misc. Stuff
+ bar();
+ 
  println(total);
-}
-
-void smallCircle() {
- for (int i = 0; i < total; i++){ 
-   bubbles[i].ascend();
-   bubbles[i].display(); 
-   bubbles[i].top();
- }
 }

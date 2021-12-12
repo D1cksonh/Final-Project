@@ -2,6 +2,11 @@ float rateX = 1;
 float ampX = 1;
 float freqX = 150;
 
+void songSetup() {
+  song.amp(ampX);
+  song.rate(rateX);
+}
+
 void keyPressed (){
   if(key == '1') {
    total = total - 1; // removes bubbles 
@@ -18,11 +23,10 @@ void keyPressed (){
   }if(key =='7') {
     freqX -= 10;
   }
-  println(freqX);
 }
 
-/*
-void frequency() {
- osc.freq(freqX);
+void songBugs() {
+  if(rateX <= 0) {
+   rateX = 0.5; 
+  }
 }
-*/

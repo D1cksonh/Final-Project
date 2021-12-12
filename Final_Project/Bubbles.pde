@@ -15,7 +15,6 @@ class Bubble {
   void ascend() {
    x = x + xspeed;
    y = y - yspeed; 
-   //x = x - xspeed;
   }
   
   void display(){
@@ -26,7 +25,7 @@ class Bubble {
   }
   
   void top() { 
-    if (y < 0 || y > height) {
+    if (y < 0 || y > height-150) {
      yspeed = yspeed * -1; 
     }
   }
