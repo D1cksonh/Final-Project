@@ -7,7 +7,7 @@ void bigCircle() {
  float volume = analyzer.analyze();
  fill(redX,blueX,greenX);
  noStroke();
- ellipse(width/2,height/2-50,10+volume*200, 10+volume*200); // size changes depending on the "beat" of the song
+ ellipse(width/2,height/2-55,10+volume*200, 10+volume*200); // size changes depending on the "beat" of the song
  
  println(10+volume*200);
 }
@@ -21,7 +21,7 @@ void smallCircle() {
 }
 
 void cubeCounter() {
- rect(rectX,900,25,25);
+ rect(rectX,400,25,25);
  rectX = rectX + moveX;
  
  if(rectX > 800 || rectX < 0) {

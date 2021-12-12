@@ -1,6 +1,5 @@
 float rateX = 1;
 float ampX = 1;
-float freqX = 150;
 
 void songSetup() {
   song.amp(ampX);
@@ -9,19 +8,13 @@ void songSetup() {
 
 void keyPressed (){
   if(key == '1') {
-   total = total - 1; // removes bubbles 
-  }if(key == '2') {
     rateX += 0.5;
-  }if(key == '3') {
+  }if(key == '2') {
     rateX -= 0.5;
-  }if(key == '4') {
+  }if(key == '3') {
     ampX += 1;
-  }if(key == '5') {
+  }if(key == '4') {
     ampX -= 1;
-  }if(key == '6') {
-    freqX += 10;
-  }if(key =='7') {
-    freqX -= 10;
   }
 }
 
@@ -29,4 +22,10 @@ void songBugs() {
   if(rateX <= 0) {
    rateX = 0.5; 
   }
+}
+
+void flashBackground() {
+  float volume = analyzer.analyze();
+  fill(redX,greenX,blueX,10+volume*100);
+  rect(0,0,640,230);
 }

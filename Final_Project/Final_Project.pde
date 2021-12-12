@@ -19,6 +19,9 @@ void setup() {
 void draw() {
  background(0);
  
+ //Flashsing Background
+ flashBackground();
+ 
  //Circle objects
  smallCircle();
  bigCircle();
@@ -29,7 +32,12 @@ void draw() {
  songBugs();
  
  //Misc. Stuff
+ /*
+ backgroundBox();
  selectionBox();
+ selectionText();
+ */
+ information();
  bar();
  
  println(total);
