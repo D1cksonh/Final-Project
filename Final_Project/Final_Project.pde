@@ -29,6 +29,7 @@ void draw() {
  songBugs();
  
  //Misc. Stuff
+ selectionBox();
  bar();
  
  println(total);
