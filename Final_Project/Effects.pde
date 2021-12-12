@@ -15,6 +15,9 @@ void keyPressed (){
     ampX += 1;
   }if(key == '4') {
     ampX -= 1;
+  }if(key == '5') {
+   song.stop();
+   song2.loop();
   }
 }
 
@@ -26,6 +29,6 @@ void songBugs() {
 
 void flashBackground() {
   float volume = analyzer.analyze();
-  fill(redX,greenX,blueX,10+volume*100);
+  fill(redX,greenX,blueX,10+volume*100); //redX,greenX and blueX values are in "circles tab
   rect(0,0,640,230);
 }

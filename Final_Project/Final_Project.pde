@@ -1,17 +1,18 @@
-Bubble[] bubbles = new  Bubble[999]; //change the 100 to change the # of bubbles
+Bubble[] bubbles = new  Bubble[999]; 
 
 import processing.sound.*;
-SoundFile song;
-Amplitude analyzer;
+SoundFile song,song2;
+Amplitude analyzer, analyzer2;
 
 void setup() {
  size(640,360);
- song = new SoundFile(this,"song.mp3");
+ song = new SoundFile(this,"song.mp3"); // Source: https://www.youtube.com/watch?v=3sO-Y1Zbft4
+ song2 = new SoundFile(this,"song2.mp3"); // Source: https://www.youtube.com/watch?v=gdpDTu4EIUk
  song.loop();
  analyzer = new Amplitude(this);
  analyzer.input(song);
  
- for (int i = 0; i < 999; i++){ // change the 100 to change # of bubbles
+ for (int i = 0; i < 999; i++){ 
    bubbles[i] = new Bubble(); 
  }
 }
@@ -32,11 +33,7 @@ void draw() {
  songBugs();
  
  //Misc. Stuff
- /*
- backgroundBox();
  selectionBox();
- selectionText();
- */
  information();
  bar();
  
