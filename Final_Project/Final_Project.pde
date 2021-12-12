@@ -17,21 +17,19 @@ void setup() {
  }
 }
 
-void mousePressed () { 
-  total = total + 1; // adds bubbles 
+void draw() {
+ background(0);
+ smallCircle();
+ bigCircle();
+ cubeCounter();
+ 
+ println(total);
 }
 
-void draw() {
- background(255); 
+void smallCircle() {
  for (int i = 0; i < total; i++){ 
    bubbles[i].ascend();
    bubbles[i].display(); 
    bubbles[i].top();
  }
- 
- song.rate(rateX);
- song.amp(ampX); // volume --> values has to be -1 >= x <= 1
- 
- //Non-music stuff
- bar();
 }
