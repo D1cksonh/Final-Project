@@ -1,3 +1,5 @@
+// This code is for changing the music
+
 float rateX = 1;
 float ampX = 1;
 
@@ -8,22 +10,19 @@ void songSetup() {
 
 void keyPressed (){
   if(key == '1') {
-    rateX += 0.5;
+    rateX += 0.2;
   }if(key == '2') {
-    rateX -= 0.5;
+    rateX -= 0.2;
   }if(key == '3') {
     ampX += 1;
   }if(key == '4') {
     ampX -= 1;
-  }if(key == '5') {
-   song.stop();
-   song2.loop();
   }
 }
 
 void songBugs() {
   if(rateX <= 0) {
-   rateX = 0.5; 
+   rateX = 0.2; 
   }
 }
 

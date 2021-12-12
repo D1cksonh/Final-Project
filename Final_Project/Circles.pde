@@ -1,3 +1,5 @@
+//This code is for the circles on the screen
+
 float rectX = 50;
 float moveX = 30;
 float redX, blueX, greenX = random(255);
@@ -14,7 +16,7 @@ void bigCircle() {
 
 void smallCircle() {
  for (int i = 0; i < total; i++){ 
-   bubbles[i].ascend();
+   bubbles[i].movement();
    bubbles[i].display(); 
    bubbles[i].top();
  }

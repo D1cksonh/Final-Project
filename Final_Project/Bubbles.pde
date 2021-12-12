@@ -1,4 +1,4 @@
-class Bubble {
+class Bubble { // class for the smaller bubbles comming away from the middle
   float x = width/2;
   float y = height/2;
   float xspeed = random(-5,5); 
@@ -7,7 +7,7 @@ class Bubble {
   float greenX = random(255);
   float blueX = random(255);
   
-  void ascend() {
+  void movement() {
    x = x + xspeed;
    y = y - yspeed; 
   }
