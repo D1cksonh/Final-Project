@@ -2,7 +2,7 @@ Bubble[] bubbles = new  Bubble[999];
 
 import processing.sound.*;
 SoundFile song;
-Amplitude analyzer, analyzer2;
+Amplitude analyzer;
 
 void setup() {
  size(640,360);
