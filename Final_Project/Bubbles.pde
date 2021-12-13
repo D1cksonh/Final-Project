@@ -1,4 +1,4 @@
-class Bubble { // class for the smaller bubbles comming away from the middle
+class Bubble { // class for the smaller bubbles comming away from the middle, the code here is inspirted from the coding train, i modified it for the sizes to react to the beat
   float x = width/2;
   float y = height/2;
   float xspeed = random(-5,5); 

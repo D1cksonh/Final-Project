@@ -1,3 +1,6 @@
+//This code/project is where the size of shapes changes depending on the beat
+//Some inspiration for writing this code comes from the coding train tutorials 
+
 Bubble[] bubbles = new  Bubble[999]; 
 
 import processing.sound.*;
