@@ -19,7 +19,7 @@ class Bubble { // class for the smaller bubbles comming away from the middle
    ellipse(x,y,10+volume*50, 10+volume*50);
   }
   
-  void top() { 
+  void Edge() { 
     if (y < 0 || y > height-150) {
      yspeed = yspeed * -1; 
     }

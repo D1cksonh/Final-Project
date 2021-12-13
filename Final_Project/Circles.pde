@@ -18,7 +18,7 @@ void smallCircle() {
  for (int i = 0; i < total; i++){ 
    bubbles[i].movement();
    bubbles[i].display(); 
-   bubbles[i].top();
+   bubbles[i].Edge();
  }
 }
 
