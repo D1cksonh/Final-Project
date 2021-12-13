@@ -1,10 +1,8 @@
 // This code is for changing the music
 
 float rateX = 1;
-float ampX = 1;
 
 void songSetup() {
-  song.amp(ampX);
   song.rate(rateX);
 }
 
@@ -13,10 +11,6 @@ void keyPressed (){
     rateX += 0.2;
   }if(key == '2') {
     rateX -= 0.2;
-  }if(key == '3') {
-    ampX += 1;
-  }if(key == '4') {
-    ampX -= 1;
   }
 }
 
