@@ -9,7 +9,7 @@ void bigCircle() {
  float volume = analyzer.analyze();
  fill(redX,blueX,greenX);
  noStroke();
- ellipse(width/2,height/2-55,10+volume*200, 10+volume*200); // size changes depending on the "beat" of the song
+ ellipse(width/2,height/2-55,10+volume*200, 10+volume*200); // size changes depending on the "beat" of the song, this is from the coding train tutorials 
  
  println(10+volume*200);
 }
